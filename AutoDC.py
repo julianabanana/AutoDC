@@ -9,7 +9,7 @@ import streamlit as st
 
 # --- Parte 1: Generar diseño con ChatGPT ---
 def generate_design(prompt):
-    client = OpenAI(api_key="sk-db9d2fdedbeb482cbcddc3d3b63b5ef1", base_url="https://api.deepseek.com")
+    client = OpenAI(api_key="API-KEY", base_url="https://api.deepseek.com")
 
     response = client.chat.completions.create(
         model="deepseek-chat",
