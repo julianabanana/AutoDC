@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 import streamlit as st
 
 
-# --- Parte 1: Generar diseño con ChatGPT ---
+# --- Parte 1: Generar diseño con DeepSeek ---
 def generate_design(prompt):
     client = OpenAI(api_key="API-KEY", base_url="https://api.deepseek.com")
 
@@ -25,7 +25,7 @@ def generate_design(prompt):
     return design
 
 def parse_design_response(response):
-    """Convierte la respuesta de ChatGPT en listas de coordenadas"""
+    """Convierte la respuesta de DeepSeek en listas de coordenadas"""
     racks = [(5,30,3,5), (15,30,3,5), (25,30,3,5), (35,30,3,5), (20,20,3,5)]  # Default 
     cooling = [(20,10,5,10)]
     electrical = [(20,5,3,10)]
