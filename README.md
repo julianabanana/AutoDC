@@ -1,37 +1,42 @@
 # 🏗️ AutoDC
 
-Una herramienta inteligente para diseñar data centers en 2D con optimización térmica y energética, utilizando la API de DeepSeek y visualización interactiva.
+An intelligent tool for designing 2D data centers with thermal and energy optimization, using the DeepSeek API and interactive visualization.
 
-## ✨ Características Principales
+## ✨ Key Features
 
-- 🖥️ Generación automática de diseños con IA (DeepSeek API)
-- 📊 Visualización 2D interactiva con Matplotlib
-- 🔥 Modelo de predicción de eficiencia energética
-- 🌐 Interfaz web con Streamlit
-- 📏 Optimización del espacio disponible
+- 🖥️ Automatic layout generation with AI (DeepSeek API)
+- 📊 Interactive 2D visualization with Matplotlib
+- 🔥 Energy efficiency prediction model
+- 🌐 Web interface with Streamlit
+- 📏 Available space optimization
 
-## 🛠️ Instalación
+## 🛠️ Installation
 
-1. Clona el repositorio:
+1. Clone the repository:
 ```bash
 git clone https://github.com/julianabanana/AutoDC.git
 cd AutoDC
 ```
 
-2. Instala las dependencias:
+2. Install dependencies:
+
 ```bash
+
 pip install matplotlib openai numpy scikit-learn streamlit
-```
 
-3. Configura tu API key desde la página de deepseek:
-```bash
- client = OpenAI(api_key="Tu-API-KEY", base_url="https://api.deepseek.com")
 ```
+3. Configure your API key from the DeepSeek website:
 
-## 🛠️ Cómo usar
-Para la versión web de streamlit, ejecuta desde consola:
 ```bash
+
+client = OpenAI(api_key="Your-API-KEY", base_url="https://api.deepseek.com")
+```
+🛠️ How to Use
+
+For the Streamlit web version, run from the console:
+```bash
+
 streamlit run AutoDC.py
 ```
 
-Igresas los datos que te pide, y se abriré en tu navegador el resultado de la ejecución.
+Enter the requested data, and the execution result will open in your browser.
